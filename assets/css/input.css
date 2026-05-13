@@ -1,14 +1,27 @@
 @import "tailwindcss";
 
-@theme{
-    --color-background: #232536;
-    --color-foreground: #FFFFFF;
-    --color-highlight: #FFA155;
+@theme {
+    --color-dark: #232536;
+    --color-white: #FFFFFF;
+    --color-orange: #FFA155;
+    --color-orange2: #FF7B00;
+    --color-blue: #4B6BFB;
+    --color-peach: #FFF0E8;
+    --color-peach2: #FEE9D7;
+    --color-gray: #F4F5F7;
+    --color-muted: #6B7280;
+    --color-light-border: #E5E7EB;
+    --font-primary: 'Poppins', sans-serif;
 }
-@layer base{
-    body{
-        background-color: var(--color-background);
-        color:var(--color-foreground);
-        
+
+@layer base {
+    body {
+        background-color: var(--color-dark);
+        color: var(--color-white);
+        font-family: var(--font-primary);
     }
+}
+
+@utility row {
+    @apply flex flex-row items-center;
 }
