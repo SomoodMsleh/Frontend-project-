@@ -242,6 +242,9 @@
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
@@ -310,6 +313,9 @@
   }
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
+  }
+  .-ml-2 {
+    margin-left: calc(var(--spacing) * -2);
   }
   .-ml-3 {
     margin-left: calc(var(--spacing) * -3);
