@@ -25,3 +25,11 @@
 @utility row {
     @apply flex flex-row items-center;
 }
+
+@utility jobCard {
+    @apply transition-shadow transition-transform duration-200;
+}
+
+@utility jobCardHover {
+    @apply shadow-lg -translate-y-0.5;
+}
