@@ -539,6 +539,9 @@
   .max-w-160 {
     max-width: calc(var(--spacing) * 160);
   }
+  .max-w-170 {
+    max-width: calc(var(--spacing) * 170);
+  }
   .max-w-\[1200px\] {
     max-width: 1200px;
   }
@@ -912,6 +915,15 @@
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
+  .p-16 {
+    padding: calc(var(--spacing) * 16);
+  }
+  .px-1 {
+    padding-inline: calc(var(--spacing) * 1);
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
@@ -942,8 +954,17 @@
   .px-54 {
     padding-inline: calc(var(--spacing) * 54);
   }
+  .px-54\.25 {
+    padding-inline: calc(var(--spacing) * 54.25);
+  }
   .px-54\.75 {
     padding-inline: calc(var(--spacing) * 54.75);
+  }
+  .px-\[217px0\] {
+    padding-inline: 217px0;
+  }
+  .px-\[217px\] {
+    padding-inline: 217px;
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -1230,6 +1251,10 @@
     --tw-leading: var(--leading-tight);
     line-height: var(--leading-tight);
   }
+  .font-\[24px\] {
+    --tw-font-weight: 24px;
+    font-weight: 24px;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -1311,6 +1336,12 @@
   }
   .text-dark {
     color: var(--color-dark);
+  }
+  .text-dark\/30 {
+    color: color-mix(in srgb, #232536 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-dark) 30%, transparent);
+    }
   }
   .text-dark\/50 {
     color: color-mix(in srgb, #232536 50%, transparent);
